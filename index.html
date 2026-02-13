@@ -96,8 +96,10 @@ viem, že to nie je dokonalé, ale dúfam, že ti to vyčarilo úsmev :)
 <script>
 
 let images = [
-
-"stiahnuť (12).jpg"
+  
+"TAM_DAS_OBRAZOK_1",
+"TAM_DAS_OBRAZOK_2",
+"TAM_DAS_OBRAZOK_3"
   
 ];
 
@@ -105,7 +107,8 @@ function showRandomImage(){
 
 let random = images[Math.floor(Math.random()*images.length)];
 
-
+document.getElementById("imageBox").innerHTML =
+`
 <div class="frame">
 <img src="${random}">
 </div>
